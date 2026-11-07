@@ -5,7 +5,7 @@
 MARKERS = {
     # kelch13 - artemisinin partial resistance
     # Validated (WHO): F446I, N458Y, C469Y, Y493H, R539T, I543T, P553L,
-    # R561H, C580Y, P574L, A675V. Others are candidate/associated: verify status.(WHO report, WWARN)
+    # R561H, C580Y, P574L, A675V. Others are candidate/associated: verify status.# Source: WHO validated/candidate kelch13 marker list
     "k13_F446I": "artemisinin",
     "k13_N458Y": "artemisinin",
     "k13_C469Y": "artemisinin",
@@ -24,21 +24,21 @@ MARKERS = {
     "k13_C469F": "artemisinin",
     "k13_P527H": "artemisinin",
 
-    # pfcrt - chloroquine (excluded from the headline model to avoid circularity)(WHO report, WWARN)
+    # pfcrt - chloroquine (excluded from the headline model to avoid circularity)# Source: Pf7 inferred-resistance rules (crt K76T)
     "crt_76[K]": "chloroquine",
 
-    # dhfr - pyrimethamine (SP)(WHO report, WWARN)
+    # dhfr - pyrimethamine (SP)# Source: WWARN molecular surveyor; Pf7 rules
     "dhfr_51[N]": "sp",
     "dhfr_59[C]": "sp",
     "dhfr_108[S]": "sp",
     "dhfr_164[I]": "sp",
 
-    # dhps - sulfadoxine (SP)(WHO report, WWARN)
+    # dhps - sulfadoxine (SP)# Source: WWARN molecular surveyor; Pf7 rules
     "dhps_437[G]": "sp",
     "dhps_540[K]": "sp",
     "dhps_581[A]": "sp",
     "dhps_613[A]": "sp",
 
-    # plasmepsin 2 duplication - piperaquine. (WHO report, WWARN)
+    # plasmepsin 2 duplication - piperaquine. # Source: Pf7 inferred-resistance rules (plasmepsin 2 duplication)
     "pm2_dup": "piperaquine",
 }
