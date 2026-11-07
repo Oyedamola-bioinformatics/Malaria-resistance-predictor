@@ -65,7 +65,8 @@ simple time trend.
 
     pip install -r requirements.txt
     python src/train.py      # downloads data, writes results.json
-    pytest
+    pytest.
+    
     
     "Verified from a clean clone: results match the table above exactly (seed 42)."
 
