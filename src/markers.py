@@ -1,11 +1,15 @@
 # Resistance markers used in this project, keyed by the feature names that
 # src/features.py produces from the MalariaGEN Pf7 genotype table.
-# Add a source (WHO report / WWARN / paper) next to each group before release.
+#
+# Sources: WHO list of artemisinin partial-resistance markers (check the
+# current WHO page, as it is updated over time); WWARN molecular surveyor;
+# MalariaGEN Pf7 paper (Wellcome Open Research 2023, 8:22) and its
+# genotype-to-resistance rules document.
 
 MARKERS = {
-    # kelch13 - artemisinin partial resistance
-    # Validated (WHO): F446I, N458Y, C469Y, Y493H, R539T, I543T, P553L,
-    # R561H, C580Y, P574L, A675V. Others are candidate/associated: verify status.# Source: WHO validated/candidate kelch13 marker list
+    # kelch13 - artemisinin partial resistance.
+    # Source: WHO validated/candidate kelch13 marker list. Validation status
+    # differs between mutations; rarer ones are candidates or associated only.
     "k13_F446I": "artemisinin",
     "k13_N458Y": "artemisinin",
     "k13_C469Y": "artemisinin",
@@ -24,21 +28,26 @@ MARKERS = {
     "k13_C469F": "artemisinin",
     "k13_P527H": "artemisinin",
 
-    # pfcrt - chloroquine (excluded from the headline model to avoid circularity)# Source: Pf7 inferred-resistance rules (crt K76T)
+    # pfcrt - chloroquine. Excluded from the headline model because the
+    # Pf7 label is derived directly from this locus (see README).
+    # Source: Pf7 genotype-to-resistance rules.
     "crt_76[K]": "chloroquine",
 
-    # dhfr - pyrimethamine (SP)# Source: WWARN molecular surveyor; Pf7 rules
+    # dhfr - pyrimethamine (SP).
+    # Source: WWARN molecular surveyor; Pf7 rules.
     "dhfr_51[N]": "sp",
     "dhfr_59[C]": "sp",
     "dhfr_108[S]": "sp",
     "dhfr_164[I]": "sp",
 
-    # dhps - sulfadoxine (SP)# Source: WWARN molecular surveyor; Pf7 rules
+    # dhps - sulfadoxine (SP).
+    # Source: WWARN molecular surveyor; Pf7 rules.
     "dhps_437[G]": "sp",
     "dhps_540[K]": "sp",
     "dhps_581[A]": "sp",
     "dhps_613[A]": "sp",
 
-    # plasmepsin 2 duplication - piperaquine. # Source: Pf7 inferred-resistance rules (plasmepsin 2 duplication)
+    # plasmepsin 2 duplication - piperaquine.
+    # Source: Pf7 genotype-to-resistance rules.
     "pm2_dup": "piperaquine",
 }
