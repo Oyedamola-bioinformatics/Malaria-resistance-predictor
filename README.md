@@ -72,3 +72,5 @@ simple time trend.
 ## License
 
 MIT
+
+![CI](https://github.com/Oyedamola-bioinformatics/Malaria-resistance-predictor/actions/workflows/ci.yml/badge.svg)
