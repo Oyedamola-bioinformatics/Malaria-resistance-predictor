@@ -1,0 +1,84 @@
+{
+  "n_samples": 15169,
+  "n_countries": 33,
+  "circular_baseline_crt76": {
+    "mean_auc": 1.0,
+    "fold_aucs": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "year_only": {
+    "mean_auc": 0.436,
+    "fold_aucs": [
+      0.239,
+      0.406,
+      0.457,
+      0.621,
+      0.458
+    ]
+  },
+  "all_loci_no_crt": {
+    "mean_auc": 0.726,
+    "fold_aucs": [
+      0.608,
+      0.673,
+      0.714,
+      0.833,
+      0.803
+    ]
+  },
+  "all_loci_plus_year": {
+    "mean_auc": 0.704,
+    "fold_aucs": [
+      0.58,
+      0.664,
+      0.698,
+      0.859,
+      0.72
+    ]
+  },
+  "no_kelch13": {
+    "mean_auc": 0.715,
+    "fold_aucs": [
+      0.584,
+      0.65,
+      0.714,
+      0.848,
+      0.777
+    ]
+  },
+  "sp_loci_only": {
+    "mean_auc": 0.704,
+    "fold_aucs": [
+      0.566,
+      0.643,
+      0.713,
+      0.846,
+      0.75
+    ]
+  },
+  "no_sp_loci": {
+    "mean_auc": 0.624,
+    "fold_aucs": [
+      0.539,
+      0.707,
+      0.524,
+      0.71,
+      0.638
+    ]
+  },
+  "logistic_all_loci_no_crt": {
+    "mean_auc": 0.687,
+    "fold_aucs": [
+      0.507,
+      0.645,
+      0.649,
+      0.865,
+      0.768
+    ]
+  }
+}
