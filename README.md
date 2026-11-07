@@ -62,14 +62,15 @@ simple time trend.
   held-out-country test is not meaningful for it.
 
 ## Reproduce
+```
+pip install -r requirements.txt
+python src/train.py      # downloads data, writes results.json
+pytest
+```
 
-    pip install -r requirements.txt
-    python src/train.py      # downloads data, writes results.json
-    pytest.
-    
-    
-    "Verified from a clean clone: results match the table above exactly (seed 42)."
+Verified from a clean clone: results match the table above exactly (seed 42).
 
+    
 ## License
 
 MIT
