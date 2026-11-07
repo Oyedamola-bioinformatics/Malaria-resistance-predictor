@@ -1,11 +1,9 @@
 # Malaria-resistance-predictor
+![CI](https://github.com/Oyedamola-bioinformatics/Malaria-resistance-predictor/actions/workflows/ci.yml/badge.svg)
 
 ML model predicting *P. falciparum* drug resistance from genomic markers.
-
 > **Research use only.** Not a diagnostic or clinical decision tool.
-
 ## Question
-
 Can chloroquine resistance be predicted in **countries the model has never
 seen**, without using the pfcrt locus that defines the label?
 
@@ -68,6 +66,7 @@ simple time trend.
     pip install -r requirements.txt
     python src/train.py      # downloads data, writes results.json
     pytest
+    "Verified from a clean clone: results match the table above exactly (seed 42)."
 
 ## License
 
