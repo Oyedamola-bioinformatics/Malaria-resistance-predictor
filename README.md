@@ -66,10 +66,11 @@ simple time trend.
     pip install -r requirements.txt
     python src/train.py      # downloads data, writes results.json
     pytest
+    
     "Verified from a clean clone: results match the table above exactly (seed 42)."
 
 ## License
 
 MIT
 
-![CI](https://github.com/Oyedamola-bioinformatics/Malaria-resistance-predictor/actions/workflows/ci.yml/badge.svg)
+
